@@ -408,7 +408,7 @@ h1 h2 h3 h4 h5 p {
 }
 .client-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 /* .clients-list-item{
     margin:;
@@ -423,7 +423,6 @@ h1 h2 h3 h4 h5 p {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  margin-right: 30px;
   padding: 16px 32px;
 }
 
@@ -676,6 +675,7 @@ h1 h2 h3 h4 h5 p {
   height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
+  box-sizing: border-box;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -728,17 +728,20 @@ h1 h2 h3 h4 h5 p {
   color: #212121;
   justify-content: space-between;
   margin-bottom: 12px;
+  margin-top: 0;
 }
 .box-input {
+  height: 40px;
   position: relative;
+  box-sizing: border-box;
 }
 .input-wrapper {
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin: 0;
 }
 .form-input {
-  width: 448px;
+  width: calc(100% - 40px);
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: none;
@@ -758,7 +761,7 @@ h1 h2 h3 h4 h5 p {
 .input-check-text {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .input-check-text .ch-icon-sp {
   width: 16px;
@@ -807,10 +810,16 @@ h1 h2 h3 h4 h5 p {
   margin-bottom: 4px;
 }
 .form-comment {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+.form-field-checkbox {
+  display: flex;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
 }
 .form-field:not(:last-child) {
   margin-bottom: 10px;
@@ -828,10 +837,11 @@ h1 h2 h3 h4 h5 p {
   fill: #2196f3;
 } */
 .form-comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  box-sizing: border-box;
   padding: 12px 16px;
   margin: 0 auto;
 }
@@ -860,11 +870,10 @@ h1 h2 h3 h4 h5 p {
   color: #ffffff;
   text-align: center;
   display: block;
-  position: relative;
-  left: 50%;
-  top: 74px;
-  bottom: 40px;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  margin-top: 30px;
+
+  /* transform: translate(-50%, -50%); */
 }
 .modal-btn:hover,
 .modal-btn:focus {
