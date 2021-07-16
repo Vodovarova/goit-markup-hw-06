@@ -401,6 +401,7 @@ h1 h2 h3 h4 h5 p {
 .clients {
   width: 1200px;
   height: 184px;
+  padding: 94px 0;
 }
 .margin-title-clients {
   margin-top: 0;
